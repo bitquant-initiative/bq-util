@@ -11,4 +11,5 @@ lib/
 target/
 /data
 /testx
+pom.xml.versionsBackup
 
