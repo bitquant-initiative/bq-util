@@ -15,7 +15,7 @@ import com.google.common.collect.Maps;
 
 public class StatementBuilder {
 
-  static final Pattern parsePattern = Pattern.compile("(.*?)\\{\\{(.*?)\\}\\}(.*)");
+  static final Pattern parsePattern = Pattern.compile("(.*?)\\{\\{(.*?)\\}\\}(.*)",Pattern.MULTILINE | Pattern.DOTALL);
   List<String> fragments = Lists.newArrayList();
   int index = 0;
   List<String> paramNames = Lists.newArrayList();
