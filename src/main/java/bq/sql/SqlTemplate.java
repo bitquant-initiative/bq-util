@@ -285,22 +285,5 @@ public class SqlTemplate {
       b.bind(2, v2);
     });
   }
-  public int executeUpdate(String sql, Object v1, Object v2, Object v3) {
-
-    return executeUpdate(b -> {
-      b.sql(sql);
-      b.bind(1, v1);
-      b.bind(2, v2);
-    });
-  }
-  public int executeUpdate(String sql, Object v1, Object v2, Object v3, Object v4) {
-
-    return executeUpdate(b -> {
-      b.sql(sql);
-      b.bind(1, v1);
-      b.bind(2, v2);
-      b.bind(3, v3);
-      b.bind(4, v4);
-    });
-  }
+ 
 }
